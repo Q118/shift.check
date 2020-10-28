@@ -10,9 +10,14 @@ To determine when a box is checked they probably use an onclick event on the che
 // grab all of the checkboxes to listeh to whehn they get checked
 const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
 
-console.log(checkboxes);
+let lastChecked;
+
+checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
 
 
-function shiftGrab() {
+function handleCheck(event) {
     
+    
+    //reference to the input that was checked last
+    lastChecked = this;
 }
