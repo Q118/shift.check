@@ -7,6 +7,12 @@ attribute to see if shift was held while clicking the checkbox.
 If so they set the checked property of each checkbox in between the two to true.
 To determine when a box is checked they probably use an onclick event on the checkboxes */
 
+// grab all of the checkboxes to listeh to whehn they get checked
+const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
+
+console.log(checkboxes);
+
+
 function shiftGrab() {
     
 }
